@@ -1,0 +1,17 @@
+{
+  "source_project_id": "appgprj_6ae1608b74c08191986eb826f311d1c0",
+  "source_checkout": "/workspace/scratch/593dcffee6c5/bbyt-brand-reference",
+  "bundled_reference": "reference/dist/index.html",
+  "source_commit": "7ae877574205adf674f15b254cce9aaed34960b0",
+  "new_project_id": null,
+  "hosting_status": "Local only; native remix capability unavailable. No creation or deployment attempted.",
+  "files_preserved_exactly": {
+    "styles.css": "ac40ab621d094c5262aef26f8053a9c2b825cb1405fa20cfb0a29f8acdda2cf9",
+    "tech-hero.css": "513f73721a252b8d78b096909a1dde83485971f858fd3df6950d063e9b59edd7",
+    "bby-header-component.css": "43c9f502dd22e3a4f332a524f39ba7fd4bf95dec5fda8e7884733bf6cec9feab",
+    "site-dark.css": "d76c0e2cdd52b972105713837366de0deb688f44b8dd9a64ff24533e658ca683",
+    "clients.css": "535ea514e742b3ab48fc2f701df5afb9de7afe70488c99273575da9f332959a4",
+    "fonts.css": "53594664087f4910f06f73aeadb3013756c304ee6d1258b673160808bd191044",
+    "tech-hero-spectrum.webp": "9410de7997d630a1bb841170584d2d2075b22503120d5df695cf0455fcddb7de"
+  }
+}
