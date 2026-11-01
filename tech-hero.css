@@ -1,0 +1,24 @@
+/* Match BBYR dark backdrop behind the header without recoloring the light content sections. */
+body.home-page { background: linear-gradient(to bottom, #202123 0 120px, #f7f9fc 120px); }
+
+/* Homepage masthead: BBY Restaurants typography/buttons, distinct Tech spectrum art. */
+.home-page .hero{background:#202123;box-shadow:0 0 0 100vmax #202123;clip-path:inset(-120px -100vmax 0);border-bottom:1px solid #8aa8c633}
+.home-page .hero-blob{top:0;height:720px;opacity:1}
+.tech-hero-art{display:block;width:100%;height:100%;object-fit:contain;opacity:.88}
+.home-page .hero-blob:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#202123b8 0%,#20212380 38%,#20212300 68%);pointer-events:none}
+.home-page .hero-copy h1{color:#fff;text-shadow:0 2px 2px #07111e99,0 7px 24px #03091266}
+.home-page .hero-copy .hero-text{color:#f4f9ff;text-shadow:0 1px 2px #030912cc,0 3px 12px #03091280}
+.home-page .hero-copy .eyebrow{color:#b8dcff;text-shadow:0 1px 3px #030912aa}
+.home-page .hero .button{color:#fff;text-shadow:0 1px 2px #03091299}
+.home-page .hero .button-primary{background:linear-gradient(135deg,#073569,#1c6bca);box-shadow:0 10px 24px #0054b326}
+.home-page .hero .button-secondary{background:#121416;color:#fff;border-color:#32363a}
+.home-page .hero .button-secondary:hover{background:#2b333e;border-color:#5f7d9e}
+.home-page .nav-dropdown-menu,.home-page .nav-submenu-panel{background:#1a212b;color:#f4f9ff;border-color:#4d627c}
+.home-page .nav-dropdown-menu a{color:#f4f9ff}
+@media(max-width:700px){.tech-hero-art{object-fit:cover;object-position:55% center;opacity:.55}.home-page .hero-blob:after{background:linear-gradient(90deg,#20212399,#20212355 70%,transparent)}}
+@media(max-width:560px){.home-page .hero-text{font-size:1.05rem}}
+/* Exact BBYR divider and explicit complete navbar border. */
+.home-page .hero{border-bottom:0}
+.home-page .hero:after{content:"";display:block;position:absolute;left:50%;right:auto;top:auto;bottom:0;width:100vw;height:1px;transform:translateX(-50%);border:0;border-radius:0;background:#414b58;box-shadow:none;z-index:0;pointer-events:none}
+
+.home-page .hero .button-primary:hover{background:linear-gradient(135deg,#114d89,#287bdb)}

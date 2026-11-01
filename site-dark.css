@@ -1,0 +1,20 @@
+/* Always-dark BBY theme. Never conditional on device preference. */
+:root{color-scheme:dark;--navy-950:#eff7ff;--navy-900:#e6f1ff;--navy-800:#bbd6f3;--ink:#e5eff8;--slate:#b1c1d3;--line:rgba(172,195,221,.24);--blue-600:#71aaff;--blue-400:#9bc8ff;--blue-300:#b9d9ff;--blue-gradient:linear-gradient(135deg,#073569,#1c6bca);--blue-gradient-soft:linear-gradient(135deg,#263a51,#263443);--ice:#25394f;--shadow:0 24px 70px rgba(0,0,0,.25)}
+html,body,body.home-page{background:#202123;color:var(--ink);color-scheme:dark}
+h1,h2,h3,.brand-mark,.site-footer strong{color:#fff;text-shadow:0 1px 2px #07111e99,0 4px 14px #03091255}
+.brand-name,.menu-button{color:#f4f9ff}.eyebrow,.card-number{color:#84b7ff}.section-heading::after{background:linear-gradient(90deg,#3166a6,#90c7ff)}
+body:not(.home-page) .site-header{background:radial-gradient(ellipse at 100% 0%,#88d9f12b,transparent 65%),linear-gradient(135deg,#25465a,#1d354d 62%,#172b40);border:1px solid #8ecde765;box-shadow:inset 0 1px #c7f1ff20,0 10px 30px #08172520;backdrop-filter:none}
+.site-nav a:hover{color:#9dc9ff}.nav-dropdown-menu,.nav-submenu-panel{background:#1a212b;border-color:#4d627c;color:#f4f9ff}
+.nav-contact,.button-primary,.button-light{background:var(--blue-gradient);color:#fff;border-color:#3e6c9d;box-shadow:0 10px 24px #0054b326}.button-secondary{background:#121416;color:#e6eff8;border-color:#32363a}.button-secondary:hover{background:#2b333e;border-color:#5f7d9e}.text-link{color:#a9d0ff}
+/* Exact BBYR PHP-palette block surface, including the all-around teal rim. */
+.pillar-card,.project-card,.process-step,.network-service-card,.service-cta,.feature-link-card,.placeholder-card,.website-process,.website-cta,.optimization-overview-card,.optimization-card{background:radial-gradient(ellipse at center,#172b40 5%,#1d354d 58%,#28586a 100%);border-color:#85d7e766;box-shadow:inset 0 0 0 1px #b6ecf514,0 14px 45px #0002}
+.pillar-card p,.project-card p,.process-step p,.network-service-copy p,.service-cta p,.feature-link-card p,.placeholder-card p,.optimization-card p{color:#c4ddec}
+.pillar-card:hover,.project-card:hover{border-color:#6e9bd1;box-shadow:0 22px 52px #0003}
+.about-card{background:radial-gradient(ellipse at 14% 12%,#6abbe52b,transparent 55%),linear-gradient(135deg,#25465a,#1d354d 62%,#172b40);border-color:#8ecde765;box-shadow:inset 0 1px #c7f1ff20,0 16px 42px #0002}.about-card>p{color:#c4ddec}
+.process-section,.optimization-diagram{background:radial-gradient(circle at 85% 15%,#58a9ff2e,transparent 34%),linear-gradient(145deg,#111922,#263443)}
+.contact-section{background:radial-gradient(circle at 50% 0%,#2d65a533,transparent 60%),#111922;border-top:1px solid #3b4e64}.contact-inner h2{color:#edf6ff}.contact-inner>p:not(.eyebrow){color:#c1cfdf}.site-footer{color:#a6b8cd}
+.service-hero{background:linear-gradient(135deg,#202123 20%,#1d354d 100%)}.service-hero-blob{background:radial-gradient(circle at 45% 45%,#58a9ff40,#344a6466 52%,#26344333)}.breadcrumb-bar{background:#171e27;border-color:#455c75}.website-security-section{background:linear-gradient(180deg,#181c21,#20262d);border-color:#414b58}.network-service-visual{background:#111922}.website-icon,.security-node svg{background:#25394f;border-color:#4a627e}
+.hero-text{color:#eff5fc}.hero:not(.home-page .hero)::before{background:radial-gradient(circle,#31577a44,transparent 70%)}.hero:not(.home-page .hero)::after{background:transparent;border-color:#526f9940}
+.audience-grid .pillar-card{min-height:180px;justify-content:center;align-items:center;text-align:center}.audience-grid h3{margin:0}.audience-grid h3 a{display:block;color:inherit}.audience-grid h3 a:hover{color:#b8dcff}
+a:focus-visible,button:focus-visible{outline:3px solid #a6ceff;outline-offset:5px}
+@media(max-width:860px){.site-nav{background:linear-gradient(135deg,#25465a,#172b40);border-color:#8ecde765}.site-nav a:hover{background:#293c51}}

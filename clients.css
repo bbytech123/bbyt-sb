@@ -1,0 +1,85 @@
+/* Our Favorite Clients */
+.clients-section { padding-top: 95px; padding-bottom: 105px; }
+.clients-section .section-heading { margin-bottom: 46px; }
+.client-logo-grid {
+  display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px;
+  max-width:900px; margin-inline:auto;
+}
+.client-logo-card {
+  display:flex; min-height:220px; align-items:center; justify-content:center;
+  padding:38px 54px; background:linear-gradient(150deg,#fff 68%,rgba(88,169,255,.08));
+  border:1px solid var(--line); border-radius:var(--radius-md);
+  box-shadow:0 14px 45px rgba(3,22,47,.06);
+}
+.client-logo-card img { display:block; width:auto; max-width:82%; max-height:125px; object-fit:contain; }
+.client-logo-card:first-child img { max-height:150px; }
+@media(max-width:700px){
+  .client-logo-grid{grid-template-columns:1fr}
+  .client-logo-card{min-height:180px}
+}
+
+
+/* Favorite Clients — centered horizontal logo row */
+.client-logo-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.client-logo-card {
+  display: flex;
+  flex: 0 1 320px;
+  min-height: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.client-logo-card img,
+.client-logo-card:first-child img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+@media (max-width: 700px) {
+  .client-logo-grid {
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .client-logo-card {
+    flex-basis: auto;
+    width: min(320px, 90%);
+  }
+}
+
+
+/* Original logo alpha masks preserve exact brand artwork; reuse existing aurora texture. */
+.client-mark{position:relative;display:block;filter:drop-shadow(0 2px 13px #359dff38)}
+.angels-mark{width:225px;height:150px}
+.korrect-mark{width:280px;height:71.4px}
+.client-mark img{width:100%!important;height:100%;max-height:none!important;object-fit:contain}
+@supports (mask-image:url("assets/Angels.webp")){
+.client-mark:after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,#a7e5ffcc,#69baffaa 45%,#a7e5ffcc),url("assets/hero-aurora.webp") center/160% auto,#50a4ef;mask-repeat:no-repeat;mask-position:center;mask-size:contain;pointer-events:none}
+.angels-mark:after{mask-image:url("assets/Angels.webp")}
+.korrect-mark:after{mask-image:url("assets/Korrect.webp")}
+}
+
+.clients-backdrop{background:#202123;color:#e5eff8;color-scheme:dark}
+.clients-section .eyebrow{color:#84b7ff}
+.clients-section h2{color:#fff;text-shadow:0 1px 2px #07111e99,0 4px 14px #03091255}
+.clients-section .section-heading::after{background:linear-gradient(90deg,#3166a6,#90c7ff)}
+
+.client-logo-card img{filter:brightness(0) saturate(100%) invert(51%) sepia(90%) saturate(2100%) hue-rotate(190deg) brightness(122%) contrast(101%) saturate(.82) drop-shadow(0 3px 14px #379cff30)}
+.client-logo-card .korrect-logo{width:100%;height:auto;max-height:150px}
